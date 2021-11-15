@@ -187,6 +187,39 @@
     <div id="m_overlay"></div>
     <!-- 모달팝업3 관련 -->
 </div>
+<footer>
+    <div class="cnt_inner">
+        <a href="javascript:;" class="btnTop">
+            <span class="blind">top</span>
+            <canvas id="canvas" width="40" height="40"></canvas>
+        </a>
+        Contact Me : 010 4421 2305  / vitaminz@naver.com <br> <br>
+       Copyright ⓒ 2021. Sunghun Kim All rights reserved.
+    </div>
+</footer>
+<script>
+    $(function () {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var end = 0;
+
+        function drawScreen(end) {
+            ctx.clearRect(0, 0, 40, 40);
+            ctx.beginPath();
+            ctx.strokeStyle = "#355070";
+            ctx.lineWidth = 2;
+            ctx.arc(20, 20, 19, (Math.PI / 180) * (0 - 90), (Math.PI / 180) * (end - 90), false);
+            ctx.stroke();
+            ctx.closePath();
+        }
+        drawScreen();
+        $(window).on("scroll", function () {
+            end = $(window).scrollTop() * 360 / ($(document).height() - $(window).height());
+            drawScreen(end);
+        });
+    });
+    </script>
+
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
@@ -200,7 +233,7 @@
             let value = window.scrollY;
             stars.style.left = value * 0.25 + 'px';
             moon.style.top = value * 1.05 + 'px';
-            mountains_behind.style.top = value * 0.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
             mountains_front.style.top = value * 0 + 'px';
             // text.style.marginRight = value * 4 + 'px';
             // text.style.marginTop = value * 1.5 + 'px';
