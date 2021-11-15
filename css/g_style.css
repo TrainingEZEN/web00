@@ -1,0 +1,133 @@
+
+.slider {
+    width: 950px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 950px;
+    height: 500px;
+}
+
+/* css for manual slide navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 950px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40d3dc;
+}
+
+/* 모바일 게임 라디오버튼 */
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -80%;
+}
+#radio6:checked~.first {
+    margin-left: -100%;
+}
+#radio7:checked~.first {
+    margin-left: -120%;
+}
+#radio8:checked~.first {
+    margin-left: -140%;
+}
+#radio9:checked~.first {
+    margin-left: -160%;
+}
+
+/* 어플리케이션 라디오버튼 */
+#b_radio1:checked~.first {
+    margin-left: 0;
+}
+
+#b_radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#b_radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* #b_radio4:checked ~ .first{
+    margin-left: -60%;
+} */
+
+/* 아케이드게임 라디오버튼 */
+#ar_radio1:checked~.first {
+    margin-left: 0;
+}
+
+#ar_radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#ar_radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#ar_radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#ar_radio5:checked~.first {
+    margin-left: -80%;
+}
+
+/* 온라인게임 라디오버튼 */
+#on_radio1:checked~.first {
+    margin-left: 0;
+}
+
+#on_radio2:checked~.first {
+    margin-left: -20%;
+}

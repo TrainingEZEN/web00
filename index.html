@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹관련 포트폴리오</title>
+    <link rel="stylesheet" href="./css/m_style.css">
+    <link rel="stylesheet" href="./css/g_style.css">
+    <link rel="stylesheet" href="./css/style_a.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/m_script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <!-- <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>         -->
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Huns Gallery</h2>
+        <a href="#sec" id="btn">View</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Gallery</h2>
+        <div class="n_container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>HTML/CSS</h2>
+                    <p>html과 css의 기본 기술을 이용한 웹 입니다.
+                    </p>
+                    <!-- <a href="#">자세히 보기</a> -->
+                    <button data-modal-target="#modal_1">더보기</button>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>Responsive</h2>
+                    <p> 모바일과 변형되는 웹페이지에 대응할 수 있는 
+                        반응형 웹 입니다.
+                    </p>
+                    <button data-modal-target="#modal_2">더보기</button>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>JavaScript</h2>
+                    <p>자바스크립트와 제이쿼리를 이용한 웹페이지 입니다.
+                    </p>
+                    <button data-modal-target="#modal_3">더보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+    <div class="modal" id="modal_1">
+        <div class="modal-header">
+            <div class="title">HTML/CSS</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        
+        <!-- 모달 메인 바디 -->
+        <div class="modal-body">
+            <!-- 이미지 삽입 관련 -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio btn starts -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">                   
+                               
+                    <!-- radio btn end -->
+
+                    <!-- slide image start -->
+                    <div class="slide first">
+                        <a href="https://trainingezen.github.io/1019_gooroomtour_1/" target="_blank">사이트보기</a>
+                        <img src="./img/web_01.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <a href="https://trainingezen.github.io/endgame/" target="_blank">사이트보기</a>
+                        <img src="./img/web_02.jpg" alt="">
+                    </div>                      
+                    <!-- slide image end -->
+
+                </div>
+                <!-- manual navigation start  -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>                    
+                </div>
+                <!-- manual navigation end  -->
+            </div>
+            <!-- 이미지 삽입 관련 -->
+        </div>
+        <!-- 모달 메인 바디 관련 끝 -->
+    </div>
+
+    <div id="m_overlay"></div>
+    <!-- 모달팝업1 관련 -->
+
+    <!-- 모달팝업2 관련 -->
+
+    <div class="modal" id="modal_2">
+        <div class="modal-header">
+            <div class="title">Responsive</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <!-- 모달 메인 바디 -->
+        <div class="modal-body">
+            <!-- 이미지 삽입 관련 -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio btn starts -->
+                    <input type="radio" name="radio-btn" id="b_radio1">                    
+                    <!-- radio btn end -->
+
+                    <!-- slide image start -->
+                    <div class="slide first">
+                        <!-- <a href="https://trainingezen.github.io/1020_invite/">사이트 보기</a> -->
+                        <a href="https://trainingezen.github.io/1020_invite/" onclick="window.open('https://trainingezen.github.io/1020_invite/', '초대장','width=480, height=1000'); return false">사이트보기</a>
+                        <img src="./img/mo_01.jpg" alt="">
+                    </div>
+                    <!-- slide image end -->
+
+                </div>
+                <!-- manual navigation start  -->
+                <div class="navigation-manual">
+                    <label for="b_radio1" class="manual-btn"></label>                    
+                </div>
+                <!-- manual navigation end  -->
+            </div>
+            <!-- 이미지 삽입 관련 -->
+        </div>
+        <!-- 모달 메인 바디 관련 끝 -->
+    </div>
+
+    <div id="m_overlay"></div>
+    <!-- 모달팝업2 관련 -->
+
+    <!-- 모달팝업3 관련 -->
+
+    <div class="modal" id="modal_3">
+        <div class="modal-header">
+            <div class="title">JavaScript</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <!-- 모달 메인 바디 -->
+        <div class="modal-body">
+            <!-- 이미지 삽입 관련 -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio btn starts -->
+                    <input type="radio" name="radio-btn" id="ar_radio1">
+                  
+                    <!-- radio btn end -->
+
+                    <!-- slide image start -->
+                    <div class="slide first">
+                        <a href="https://trainingezen.github.io/0916_project/" target="_blank">사이트보기</a>
+                        <img src="./img/js_01.jpg" alt="">
+                    </div>                  
+                    <!-- slide image end -->
+
+                </div>
+                <!-- manual navigation start  -->
+                <div class="navigation-manual">
+                    <label for="ar_radio1" class="manual-btn"></label>
+                    
+                </div>
+                <!-- manual navigation end  -->
+            </div>
+            <!-- 이미지 삽입 관련 -->
+        </div>
+        <!-- 모달 메인 바디 관련 끝 -->
+    </div>
+
+    <div id="m_overlay"></div>
+    <!-- 모달팝업3 관련 -->
+</div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        // let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll',function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.05 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            // text.style.marginRight = value * 4 + 'px';
+            // text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
