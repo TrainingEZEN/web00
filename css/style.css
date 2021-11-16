@@ -94,6 +94,14 @@ section img#mountains_front{
     font-size: 4.5vw;    
     z-index: 12;
 }
+#text1{
+    position: absolute;
+    left: 300px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 24px;    
+    z-index: 12;
+}
 #btn{
     text-decoration: none;
     display: inline-block;
